@@ -1,8 +1,10 @@
+require 'pry'
 
 def unsafe?(speed)
   if speed > 40 || 60
     true
-  elsif speed.between(40..60)
+  else speed.between(40..60)
+    binding.pry
     return false
   end
 end
