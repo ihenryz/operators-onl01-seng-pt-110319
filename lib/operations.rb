@@ -3,7 +3,7 @@ require 'pry'
 def unsafe?(speed)
   if speed > 40 || 60
     true
-  else speed 
+  else speed > 
     
     return false
   end
